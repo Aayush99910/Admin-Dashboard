@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Inter&family=Megrim&family=Oldenburg&family=Poor+Story&family=Roboto+Condensed&family=Roboto:wght@300&family=Salsa&display=swap');
 
 :root {
-    --nav-bg-color: rgb(52, 134, 212);
-    --button-color: rgb(52, 134, 212);
+    --nav-bg-color: #1f2937;
+    --button-color: #fb7185;
     --text-color: white;
 }
 
@@ -303,7 +303,7 @@ main {
 }
 
 .card-color {
-    background-color: salmon;
+    background-color: #6366f1;
     width: 20px;
     height: 100%;
     border-top-left-radius: 8px;

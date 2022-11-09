@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Inter&family=Megrim&family=Oldenburg&family=Poor+Story&family=Roboto+Condensed&family=Roboto:wght@300&family=Salsa&display=swap');
+
 :root {
     --nav-bg-color: rgb(52, 134, 212);
     --button-color: rgb(52, 134, 212);
@@ -10,13 +12,63 @@ body {
     margin: 0;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1201px) {
     nav {
         width: 20%;
     }
 
     main {
         width: 80%;
+    }
+
+    .account-container {
+        width: 70%;
+    }
+
+    .new-upload-share-container {
+        width: 30%;
+    }
+
+    .search-container {
+        width: 80%;
+    }
+
+    .profile-container {
+        width: 20%;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(3, minmax(150px, 2fr));
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px){
+    nav {
+        width: 20%;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .search-container {
+        width: 65%;
+    }
+
+    .profile-container {
+        width: 35%;
+    }
+
+    .account-container {
+        width: 60%;
+    }
+
+    .new-upload-share-container {
+        width: 40%;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(150px, 2fr));
     }
 }
 
@@ -34,7 +86,7 @@ nav {
     background-color: var(--nav-bg-color);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     padding: 10px;
 }
 
@@ -46,7 +98,7 @@ nav {
 
 .nav-header-container p {
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif, cursive;
+    font-family: "Inter", sans-serif;
 }
 
 .dashboard {
@@ -67,14 +119,30 @@ nav {
 }
 
 .item p {
-    font-family: Comic, cursive;
+    font-family: 'Roboto', sans-serif, cursive;
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .item img {
     height: 30px;
     width: auto;
+}
+
+.github-repo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.github-repo p{
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.github-icon {
+    height: 50px;
 }
 
 main {
@@ -85,7 +153,7 @@ main {
 .main-header-container {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    padding: 5px 1rem;
+    padding: 0px 1rem;
 }
 
 .search-profile-container {
@@ -98,7 +166,6 @@ main {
     display: flex;
     gap: 10px;
     align-items: center;
-    width: 65%;
     height: 50%;
 }
 
@@ -111,7 +178,7 @@ main {
     border-radius: 15px;
     padding: 5px 0 5px 10px;
     font-size: 16px;
-    font-family: Comic, cursive;
+    font-family: "Roboto", sans-serif;
 }
 
 .profile-container {
@@ -119,7 +186,6 @@ main {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    width: 35%;
 }
 
 .notification {
@@ -140,16 +206,16 @@ main {
 }
 
 .profile-container p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Salsa", sans-serif;
     font-weight: bold;
 }
 
 .account-new-upload-share-container {
     display: flex;
+    align-items: center;
 }
 
 .account-container {
-    width: 50%;
     gap: 10px;
     align-items: center;
     display: flex;
@@ -173,16 +239,17 @@ main {
 
 .account-container > div > #greetings {
     font-size: 15px;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
 
 .account-container > div > #username {
-    font-size: 25px;   
+    font-size: 25px;
+    font-family: 'Comic Neue', sans-serif;  
     font-weight: bold; 
 }
 
 .new-upload-share-container {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,15 +262,17 @@ main {
     color: var(--text-color);
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
+    font-family: "Roboto", sans-serif;
 }
 
 .main-body-container {
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(219, 219, 219);
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 20px 10px;
-    column-gap: 20px;
+    column-gap: 15px;
+    row-gap: 15px;
 }
 
 .projects-heading-container {
@@ -216,13 +285,13 @@ main {
 .trending-container > p {
     margin: 0;
     font-weight: bold;
+    font-family: "Megrim", cursive;
     margin-bottom: 5px;
 }
 
 .projects-container {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(2, minmax(150px, 2fr));
 }
 
 .card {
@@ -230,7 +299,7 @@ main {
     border: none;
     border-radius: 8px;
     display: flex;
-    height: 150px;
+    height: 180px;
 }
 
 .card-color {
@@ -241,18 +310,29 @@ main {
     border-bottom-left-radius: 8px;
 }
 
-.title-description {
-    padding: 20px;
+.title-description-icon {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .card-title {
     font-weight: bold;
+    font-family: "Inter", sans-serif;
 }
 
 .card-description p {
-    color: gray;
+    color: rgb(174, 174, 174);
+    font-family: "Comic Neue", sans-serif;
     margin: 0;
     margin-top: 2px;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .annoucements-container {
@@ -271,7 +351,6 @@ main {
 
 .annoucements-item {
     padding: 10px;
-    border-bottom: 2px solid gray;
 }
 
 .annoucements-item p {
@@ -280,10 +359,13 @@ main {
 
 .annoucements-item .annoucements-title {
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
 
 .annoucements-item .annoucements-description {
     font-weight: normal;
+    font-family: "Comic Neue", sans-serif;
+    color: rgb(162, 162, 162);
 }
 
 .trending-container {
@@ -305,7 +387,12 @@ main {
 .trending-item-logo {
     height: 50px;
     width: 50px;
-    border: 1px solid purple;
+    border-radius: 50%;
+}
+
+.trending-item-logo-img {
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 
@@ -316,9 +403,12 @@ main {
 
 .trending-profile {
     font-weight: bold;
+    font-family: "Salsa", Arial, Helvetica, sans-serif;
 }
 
 .trending-profile-job {
     font-weight: normal;
+    font-size: 14px;
     color: rgb(145, 145, 145);
+    font-family: "Roboto", sans-serif;
 }

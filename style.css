@@ -79,7 +79,7 @@ nav {
 
 main {
     display: grid;
-    grid-template-rows: 2fr 9fr;
+    grid-template-rows: 160px  1fr;
 }
 
 .main-header-container {
@@ -206,10 +206,53 @@ main {
     column-gap: 20px;
 }
 
-.projects-container {
-    background-color: red;
+.projects-heading-container {
     grid-column: 1/2;
     grid-row: 1/3;
+}
+
+.projects-heading-container > p,
+.annoucements-container > p,
+.trending-container > p {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.projects-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(150px, 2fr));
+}
+
+.card {
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    height: 300px;
+}
+
+.card-color {
+    background-color: salmon;
+    width: 20px;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.title-description {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-description p {
+    color: gray;
+    margin: 0;
+    margin-top: 2px;
 }
 
 .annoucements-container {

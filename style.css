@@ -12,13 +12,56 @@ body {
     margin: 0;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1400px) {
     nav {
         width: 20%;
+        gap: 30px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-header-container{
+        display: flex;
+    }
+
+    .nav-header-container p {
+        font-size: 25px;
+    }
+
+    .nav-body-container {
+        padding: 0 0 0 10px;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #task-icon {
+        display: flex;
+    }
+
+    #communities-icon {
+        display: flex;
+    }
+
+    .github-repo {
+        display: flex;
     }
 
     main {
         width: 80%;
+    }
+
+    .main-header-container {
+        padding: 0px 1rem;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .new-upload-share-container button {
+        display: flex;
     }
 
     .account-container {
@@ -27,14 +70,115 @@ body {
 
     .new-upload-share-container {
         width: 30%;
+        justify-content: center;
     }
 
     .search-container {
         width: 80%;
     }
 
+    .new-upload-share-container {
+        gap: 20px;
+    }
+
+    .account-container > div > #username {
+        font-size: 25px;
+    }
+
+    .new-upload-share-container button {
+        padding: 0.5rem 1.5rem;
+    }
+
     .profile-container {
         width: 20%;
+        gap: 30px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(4, minmax(150px, 2fr));
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1399px) {
+    nav {
+        padding: 10px;
+        width: 20%;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .nav-header-container{
+        display: flex;
+    }
+
+    .nav-header-container p {
+        font-size: 25px;
+    }
+
+    .nav-body-container {
+        padding: 0 0 0 10px;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #task-icon {
+        display: flex;
+    }
+
+    #communities-icon {
+        display: flex;
+    }
+
+    .github-repo {
+        display: flex;
+    }
+    
+    #menu-btn {
+        display: none;
+    }
+
+    .new-upload-share-container button {
+        display: flex;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .main-header-container {
+        padding: 0px 1rem;
+    }
+
+    .account-container {
+        width: 70%;
+    }
+
+    .account-container > div > #username {
+        font-size: 25px;
+    }
+
+    .new-upload-share-container {
+        width: 30%;
+        justify-content: center;
+    }
+
+    .search-container {
+        width: 80%;
+    }
+
+    .new-upload-share-container {
+        gap: 20px;
+    }
+
+    .new-upload-share-container button {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .profile-container {
+        width: 20%;
+        gap: 30px;
     }
 
     .projects-container {
@@ -44,11 +188,54 @@ body {
 
 @media (min-width: 800px) and (max-width: 1200px){
     nav {
+        padding: 10px;
         width: 20%;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .nav-header-container{
+        display: flex;
+    }
+
+    .nav-header-container p {
+        font-size: 22px;
+    }
+
+    .nav-body-container {
+        padding: 0 0 0 10px;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #task-icon {
+        display: flex;
+    }
+
+    #communities-icon {
+        display: flex;
+    }
+
+    .github-repo {
+        display: flex;
     }
 
     main {
         width: 80%;
+    }
+
+    .main-header-container {
+        padding: 0px 1rem;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .new-upload-share-container button {
+        display: flex;
     }
 
     .search-container {
@@ -57,14 +244,25 @@ body {
 
     .profile-container {
         width: 35%;
+        gap: 15px;
     }
 
     .account-container {
         width: 60%;
     }
 
+    .account-container > div > #username {
+        font-size: 18px;
+    }
+
     .new-upload-share-container {
+        gap: 10px;
         width: 40%;
+        justify-content: center;
+    }
+
+    .new-upload-share-container button {
+        padding: 0.5rem 1rem;
     }
 
     .projects-container {
@@ -72,32 +270,195 @@ body {
     }
 }
 
-@media (min-width:  580px) and (max-width: 799px) {
+@media (min-width:  600px) and (max-width: 799px) {
     nav {
+        padding: 10px;
         width: 30%;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .nav-header-container{
+        display: flex;
+    }
+
+    .nav-header-container p {
+        font-size: 16px;
+    }
+
+    .nav-body-container {
+        padding: 0 0 0 10px;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #task-icon {
+        display: flex;
+    }
+
+    #communities-icon {
+        display: flex;
+    }
+
+    .github-repo {
+        display: flex;
     }
 
     main {
         width: 70%;
     }
+
+    .main-header-container {
+        padding: 0px 0.25rem;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .new-upload-share-container button {
+        display: flex;
+    }
+
+    .search-container {
+        width: 55%;
+    }
+
+    .profile-container {
+        width: 45%;
+        gap: 5px;
+    }
+
+    .account-container {
+        width: 50%;
+    }
+
+    .account-container > div > #username {
+        font-size: 14px;
+    }
+
+    .new-upload-share-container {
+        width: 50%;
+        justify-content: center;
+        gap: 10px
+    }
+
+    .new-upload-share-container button {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(1, minmax(150px, 2fr));
+    }
+}
+
+@media (min-width: 0px) and (max-width: 599px) {
+    body {
+        flex-direction: column;
+    }
+
+    .nav-header-container p {
+        font-size: 16px;
+    }
+
+    .nav-body-container {
+        padding: 0 0 0 0px;
+    }
+
+    nav {
+        padding: 2px;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .nav-body-container {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-header-container{
+        display: none;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
+
+    #task-icon {
+        display: none;
+    }
+
+    #communities-icon {
+        display: none;
+    }
+
+    .github-repo {
+        display: none;
+    }
+
+    .nav-footer-container {
+        display: none;
+    }
+
+    .main-header-container {
+        padding: 0px 0.25rem;
+    }
+
+    #menu-btn {
+        display: flex;
+        padding: 5px 1rem;
+    }
+
+    .new-upload-share-container button {
+        display: none;
+    }
+
+    .search-container {
+        width: 55%;
+    }
+
+    .new-upload-share-container {
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    .profile-container {
+        width: 45%;
+        gap: 5px;
+    }
+
+    .account-container {
+        width: 50%;
+    }
+
+    .account-container > div > #username {
+        font-size: 14px;
+    }
+
+    .new-upload-share-container {
+        width: 50%;
+    }
+
+    .new-upload-share-container button {
+        padding: 0.5rem 0.75rem;
+    }
 }
 
 nav {
-    background-color: var(--nav-bg-color);
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 10px;
+    background-color: var(--nav-bg-color);
 }
 
 .nav-header-container{
-    display: flex;
     align-items: center;
     color: var(--text-color);
 }
 
 .nav-header-container p {
-    font-size: 25px;
     font-family: "Inter", sans-serif;
 }
 
@@ -106,7 +467,6 @@ nav {
     width: auto;
 }
 
-.nav-body-container,
 .nav-footer-container {
     padding: 0 0 0 10px;
 }
@@ -130,7 +490,6 @@ nav {
 }
 
 .github-repo {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -153,7 +512,6 @@ main {
 .main-header-container {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    padding: 0px 1rem;
 }
 
 .search-profile-container {
@@ -185,7 +543,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
 }
 
 .notification {
@@ -216,7 +573,6 @@ main {
 }
 
 .account-container {
-    gap: 10px;
     align-items: center;
     display: flex;
 }
@@ -244,26 +600,23 @@ main {
 }
 
 .account-container > div > #username {
-    font-size: 25px;
     font-family: 'Comic Neue', sans-serif;  
     font-weight: bold; 
 }
 
 .new-upload-share-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
 .new-upload-share-container button {
     background-color: var(--button-color);
     border: none;
     color: var(--text-color);
-    padding: 0.5rem 1.5rem;
     border-radius: 20px;
     font-family: "Roboto", sans-serif;
 }
+
 
 .main-body-container {
     background-color: rgb(219, 219, 219);

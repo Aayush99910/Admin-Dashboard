@@ -20,6 +20,14 @@ body {
         padding: 10px;
     }
 
+    .item {
+        column-gap: 10px;
+    }
+
+    .item p {
+        font-size: 15px;
+    }
+
     .nav-header-container{
         display: flex;
     }
@@ -36,11 +44,9 @@ body {
         display: none;
     }
 
-    #task-icon {
-        display: flex;
-    }
-
-    #communities-icon {
+    #task-icon,
+    #history-icon,
+    #communities-icon{
         display: flex;
     }
 
@@ -107,6 +113,14 @@ body {
         flex-direction: column;
     }
 
+    .item {
+        column-gap: 10px;
+    }
+
+    .item p {
+        font-size: 15px;
+    }
+
     .nav-header-container{
         display: flex;
     }
@@ -123,11 +137,9 @@ body {
         display: none;
     }
 
-    #task-icon {
-        display: flex;
-    }
-
-    #communities-icon {
+    #task-icon,
+    #history-icon,
+    #communities-icon{
         display: flex;
     }
 
@@ -194,6 +206,14 @@ body {
         flex-direction: column;
     }
 
+    .item {
+        column-gap: 10px;
+    }
+
+    .item p {
+        font-size: 15px;
+    }
+
     .nav-header-container{
         display: flex;
     }
@@ -210,11 +230,9 @@ body {
         display: none;
     }
 
-    #task-icon {
-        display: flex;
-    }
-
-    #communities-icon {
+    #task-icon,
+    #history-icon,
+    #communities-icon{
         display: flex;
     }
 
@@ -278,6 +296,14 @@ body {
         flex-direction: column;
     }
 
+    .item {
+        column-gap: 10px;
+    }
+
+    .item p {
+        font-size: 15px;
+    }
+
     .nav-header-container{
         display: flex;
     }
@@ -294,11 +320,9 @@ body {
         display: none;
     }
 
-    #task-icon {
-        display: flex;
-    }
-
-    #communities-icon {
+    #task-icon,
+    #history-icon,
+    #communities-icon{
         display: flex;
     }
 
@@ -373,6 +397,14 @@ body {
         flex-direction: row;
     }
 
+    .item {
+        column-gap: 2px;
+    }
+
+    .item p {
+        font-size: 13px;
+    }
+
     .nav-body-container {
         display: flex;
         padding: 0;
@@ -388,11 +420,9 @@ body {
         display: flex;
     }
 
-    #task-icon {
-        display: none;
-    }
-
-    #communities-icon {
+    #task-icon,
+    #history-icon,
+    #communities-icon{
         display: none;
     }
 
@@ -475,13 +505,11 @@ nav {
     display: flex;
     align-items: center;
     height: 43px;
-    column-gap: 10px;
 }
 
 .item p {
     font-family: 'Roboto', sans-serif, cursive;
     color: var(--text-color);
-    font-size: 15px;
 }
 
 .item img {

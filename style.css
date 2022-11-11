@@ -3,6 +3,7 @@
 :root {
     --nav-bg-color: #1f2937;
     --button-color: #fb7185;
+    --button-hover: #ca3148;
     --text-color: white;
 }
 
@@ -512,6 +513,11 @@ nav {
     color: var(--text-color);
 }
 
+.item p:hover {
+    cursor: pointer;
+    color: red;
+}
+
 .item img {
     height: 30px;
     width: auto;
@@ -646,6 +652,11 @@ main {
 }
 
 
+.new-upload-share-container button:hover {
+    background-color: var(--button-hover);
+    cursor: pointer; 
+}
+
 .main-body-container {
     background-color: rgb(219, 219, 219);
     display: grid;
@@ -680,7 +691,13 @@ main {
     border: none;
     border-radius: 8px;
     display: flex;
+    transition: 0.20s;
     height: 180px;
+}
+
+.card:hover {
+    box-shadow: 5px 5px gray;
+    cursor: pointer;
 }
 
 .card-color {
